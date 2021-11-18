@@ -8,12 +8,13 @@ import styles from 'styles/Home.module.css';
 export default function Home() {
 	const [photo, setPhoto] = useState([]);
 
+	// get the photos link from backend
 	useEffect(() => {
 		const getPhoto = async () => {
 			try {
 				const result = await fetch(`/api/images`);
 				const data = await result.json();
-				setPhoto([...data.imagesURL]);
+				setPhoto([...data.imagesURL]); // set photos link to photo variable
 			} catch (err) {
 				console.log(err);
 			}

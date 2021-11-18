@@ -7,7 +7,8 @@ import styles from './Header.module.scss';
 
 const Header = () => {
 	const [menu, showMenu] = useState(false);
-
+	// Hamberger menu click handler
+	// Change css classes
 	const onMobileMenuClick = () => {
 		const prevMenuState = menu;
 		showMenu(!prevMenuState);

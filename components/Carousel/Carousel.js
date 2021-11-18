@@ -2,6 +2,7 @@ import styles from './Carousel.module.scss';
 import Slider from 'react-slick';
 
 const Carousel = ({ children }) => {
+	// Render custom next arrow for navigation
 	const NextArrow = (props) => {
 		const { className, style, onClick } = props;
 		return (
@@ -24,7 +25,7 @@ const Carousel = ({ children }) => {
 			</svg>
 		);
 	};
-
+	// Render custom previous arrow for navigation
 	const PrevArrow = (props) => {
 		const { className, style, onClick } = props;
 		return (
@@ -48,6 +49,7 @@ const Carousel = ({ children }) => {
 		);
 	};
 
+	// Setting for carousel (dots are bottom indicators)
 	const settings = {
 		dots: false,
 		infinite: true,
