@@ -1,0 +1,46 @@
+.Section {
+	width: 100%;
+	position: relative;
+}
+
+.Carousel_Item_Container {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+.Carousel_Content_Container {
+	width: 100%;
+	min-height: 100vh;
+	background: rgb(0 0 0 / 50%);
+	text-align: left;
+	color: var(--clr-white);
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+
+.Carousel_Content_Wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+.Main_Heading {
+	font-size: 2rem;
+	line-height: 1.1;
+}
+
+.Sub_Heading {
+	max-width: 35rem;
+	font-size: 3rem;
+	line-height: 1.1;
+	margin: 1rem 0;
+}
+
+.Para {
+	display: block;
+	margin-bottom: 1rem;
+	font-size: 1em;
+	line-height: 1;
+}

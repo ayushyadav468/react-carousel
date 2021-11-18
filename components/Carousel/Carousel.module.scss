@@ -1,0 +1,18 @@
+.Arrow_Btn {
+	display: block;
+	background-color: tranparent;
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	&:hover path {
+		fill: white;
+	}
+}
+
+.Next_Btn {
+	right: 70px;
+}
+
+.Prev_Btn {
+	left: 70px;
+}
