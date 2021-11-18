@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
-import HeroService from '../sections/home/HeroSection';
-import styles from '../styles/Home.module.css';
+import Header from 'sections/header/Header';
+import HeroService from 'sections/home/HeroSection';
+import styles from 'styles/Home.module.css';
 
 export default function Home() {
 	const [photo, setPhoto] = useState([]);
@@ -22,7 +23,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className={styles.container}>
+		<>
 			<Head>
 				<title>React Carousel</title>
 				<meta name='description' content='React/NextJS Carousel' />
@@ -31,8 +32,9 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
+				<Header />
 				<HeroService backgroundPhoto={photo} />
 			</main>
-		</div>
+		</>
 	);
 }

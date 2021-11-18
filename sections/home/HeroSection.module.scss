@@ -13,34 +13,93 @@
 	width: 100%;
 	min-height: 100vh;
 	background: rgb(0 0 0 / 50%);
-	text-align: left;
+	text-align: center;
 	color: var(--clr-white);
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 	z-index: 5;
 }
 
 .Carousel_Content_Wrapper {
-	width: 70%;
+	width: 90%;
 	margin: auto;
 }
 
 .Main_Heading {
-	font-size: 2rem;
+	font-size: 1rem;
 	line-height: 1.1;
 }
 
 .Sub_Heading {
-	max-width: 35rem;
-	font-size: 3rem;
+	max-width: 40vw;
+	font-size: 2rem;
 	line-height: 1.1;
-	margin: 1rem 0;
+	margin: 1rem auto;
 }
 
 .Para {
+	max-width: 40vw;
 	display: block;
-	margin-bottom: 1rem;
-	font-size: 1em;
-	line-height: 1;
+	margin: 1rem auto;
+	font-size: 0.8em;
+	line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+	.Carousel_Content_Container {
+		text-align: left;
+		justify-content: flex-start;
+	}
+	.Carousel_Content_Wrapper {
+		width: 80%;
+		margin: auto;
+	}
+
+	.Main_Heading {
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+
+	.Sub_Heading {
+		max-width: 35rem;
+		font-size: 3rem;
+		line-height: 1.1;
+		margin: 1rem 0;
+	}
+
+	.Para {
+		max-width: 100vw;
+		display: block;
+		margin: 1rem 0;
+		font-size: 1em;
+		line-height: 1;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.Carousel_Content_Wrapper {
+		width: 70%;
+		margin: auto;
+	}
+
+	.Main_Heading {
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+
+	.Sub_Heading {
+		max-width: 35rem;
+		font-size: 3rem;
+		line-height: 1.1;
+		margin: 1rem 0;
+	}
+
+	.Para {
+		display: block;
+		margin-bottom: 1rem;
+		font-size: 1em;
+		line-height: 1;
+	}
 }
